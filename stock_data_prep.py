@@ -124,7 +124,7 @@ def add_technical_indicators(df):
 def process_spy_data(fear_greed_file='fear-greed-2011-2023.csv'):
     ticker = 'SPY'
     end_date = datetime.now()
-    start_date = end_date - timedelta(days=5*365)
+    start_date = end_date - timedelta(days=10*365)
     
     print(f"Downloading data for {ticker}...")
     stock_data = yf.download(ticker, start=start_date, end=end_date)
